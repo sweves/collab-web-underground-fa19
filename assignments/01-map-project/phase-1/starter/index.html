@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        margin: 0;
+      }
+
+      main {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      video {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- IMAGE -->
+      <img
+        src="https://placeholders-for-codepens.s3.us-east-2.amazonaws.com/NY_Manhattan_DigitalPanels_CatchTrain.jpg"
+        alt=""
+      />
+
+      <!-- VIDEO -->
+      <!-- <video
+                src="https://placeholders-for-codepens.s3.us-east-2.amazonaws.com/Right_JetBluePR.mp4"
+                autoplay
+                muted
+            ></video> -->
+    </main>
+
+    <script>
+      setTimeout(refresh, 15000)
+
+      function refresh() {
+        location.reload(true)
+      }
+    </script>
+  </body>
+</html>
