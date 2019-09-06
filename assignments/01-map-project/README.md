@@ -44,3 +44,7 @@ In class: set up and host node / express server
 **In Class 9/27**
 
 In class: Informal presentations to class / no slides just showing work.
+
+## Rubric
+
+[`rubric.pdf`](./rubric.pdf)
