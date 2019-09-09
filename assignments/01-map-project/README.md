@@ -21,7 +21,7 @@ In the history of the MTA the subway map has been redone by various artists, for
 
 In class: setup project repo and get started with static web content on the boards
 
-`action items` design map and host on github project page & submit url on canvas
+`action items` design map and host on github project page
 
 ### Phase 2
 
@@ -29,7 +29,7 @@ In class: setup project repo and get started with static web content on the boar
 
 In class: begin working with MTA data and walk through build processes / build strategies for the boards
 
-`action items` setup build process for map project & submit url on canvas
+`action items` setup build process for map project
 
 ### Phase 3
 
@@ -37,7 +37,7 @@ In class: begin working with MTA data and walk through build processes / build s
 
 In class: set up and host node / express server
 
-`action items` host map project on node server & submit url on canvas
+`action items` host map project on node server
 
 ### Presentations
 
