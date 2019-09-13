@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#main {
+  height: 1920px;
+  width: 1080px;
+}
+
+#mega {
+  top: 375px;
+}
+
+#power {
+  top: 1250px;
+}
+
+.dual {
+  .center {
+    font-size: 300px;
+    color: #faf277;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+  }
+
+  .panels-1 {
+    display: none;
+  }
+}
+
+.single {
+  .center {
+    font-size: 331px;
+    color: #faf277;
+    top: 642px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+  }
+
+  .panels-2 {
+    display: none;
+  }
+}
+
+sup {
+  font-size: 150px;
+}

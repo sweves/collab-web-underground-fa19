@@ -17,31 +17,25 @@ In the history of the MTA the subway map has been redone by various artists, for
 
 ### Phase 1
 
-**Due: 9/13**
+**Due: 9/20**
 
-In class: setup project repo and get started with static web content on the boards
+In class 9/13: setup project repo and get started with static web content on the boards
 
-`action items` design map and host on github project page
+In class 9/20: begin working with MTA data and walk through build processes / build strategies for the boards
+
+`Goal:` design map and host on github project page
 
 ### Phase 2
 
-**Due: 9/20**
+**Due: 10/4**
 
-In class: begin working with MTA data and walk through build processes / build strategies for the boards
+In class 9/27: set up and host node / express server
 
-`action items` setup build process for map project
-
-### Phase 3
-
-**Due: 9/27**
-
-In class: set up and host node / express server
-
-`action items` host map project on node server
+`action items` map MVP
 
 ### Presentations
 
-**In Class 9/27**
+**In Class 10/11**
 
 In class: Informal presentations to class / no slides just showing work.
 
