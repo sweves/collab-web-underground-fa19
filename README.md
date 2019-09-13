@@ -33,24 +33,24 @@ Digital interactions are no longer limited to our personal devices but are now i
 
 ### Schedule
 
-| Week | Date  | Description                                          | Assignment                                      |
-| ---- | ----- | ---------------------------------------------------- | ----------------------------------------------- |
-| 1    | 8/30  | Introduction & class overview                        | Prior Art Research Due: 9/6                     |
-| 2    | 9/6   | Setup Day                                            | Map Exercise Due: 9/13                          |
-| 3    | 9/13  | Build Processes for boards & Introduce Final Project | Form project groups Due: 9/27                   |
-| 4    | 9/20  | Design Team Talk & Node for boards                   |                                                 |
-| 5    | 9/27  | UX Team Talk & Map Presentations                     | (Midterm) Proposal for final project Due: 10/11 |
-| 6    | 10/4  | Marketing Team Talk & Proposal Work Day              |                                                 |
-| 7    | 10/11 | Midterm: Final Project Proposals w/guest critics     |                                                 |
-| 8    | 10/18 | Prototyping Intro                                    | Prototype final project concept Due: 11/8       |
-| 9    | 10/25 | Connected Projects & Prototype Work Day              |                                                 |
-| 10   | 11/1  | Prototype Work Day                                   |                                                 |
-| 11   | 11/8  | Prototype Presentations w/guest critics              | Final Due: 12/13                                |
-| 12   | 11/15 | Final Work Day                                       |                                                 |
-| 13   | 11/22 | Final Work Day                                       |                                                 |
-|      | 11/29 | Thanksgiving Break                                   |                                                 |
-| 14   | 12/6  | Final Work Day                                       |                                                 |
-| 15   | 12/13 | Final Demo Day @ Outfront Lab                        |
+| Week | Date  | Description                                              | Assignment                                                          |
+| ---- | ----- | -------------------------------------------------------- | ------------------------------------------------------------------- |
+| 1    | 8/30  | Introduction & class overview                            | [Prior Art Research](./assignments/00-prior-art/README.md) Due: 9/6 |
+| 2    | 9/6   | Setup Day                                                | [Map Exercise](./assignments/01-map-project/README.md) Due: 9/20    |
+| 3    | 9/13  | Dev talk & Board Setup Day                               |                                                                     |
+| 4    | 9/20  | Design Team Talk & MTA Data + Build Processes for boards | Map MVP Due: 10/4                                                   |
+| 5    | 9/27  | UX Team Talk & Introduce Final Project & Node for boards | Form project groups Due: 10/4                                       |
+| 6    | 10/4  | Marketing Team Talk & Map Work Day                       |                                                                     |
+| 7    | 10/11 | Midterm: Present Map Project                             |                                                                     |
+| 8    | 10/18 | Final Project Proposals w/Outfront team                  |                                                                     |
+| 9    | 10/25 | Connected Projects & Prototype Work Day                  |                                                                     |
+| 10   | 11/1  | Prototype Work Day                                       |                                                                     |
+| 11   | 11/8  | Prototype Presentations w/guest critics                  | Final Due: 12/13                                                    |
+| 12   | 11/15 | Final Work Day                                           |                                                                     |
+| 13   | 11/22 | Final Work Day                                           |                                                                     |
+|      | 11/29 | Thanksgiving Break                                       |                                                                     |
+| 14   | 12/6  | Final Work Day                                           |                                                                     |
+| 15   | 12/13 | Final Demo Day @ Outfront Lab                            |
 
 ### Assessable Tasks
 
