@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Telemundo</title>
+<style type="text/css">@font-face {
+  font-family: 'Gotham-Light';
+  src: url("https://telemundo-no-te-puedes-esconder.s3.amazonaws.com/Gotham-Light.otf") format("opentype"); }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Gotham-Light', sans-serif;
+  background-color: black; }
+
+ul {
+  list-style-type: none; }
+
+.bg-video {
+  z-index: -4; }
+
+.clock {
+  position: absolute;
+  bottom: 430px;
+  width: 100%;
+  text-align: center;
+  padding: 0 40px; }
+
+.labels {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  display: inline-block;
+  width: 100%; }
+
+.labels li {
+  display: inline-block;
+  color: #ffffff;
+  width: 24%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 300; }
+
+.counter {
+  background: #222528;
+  border: 5px solid #000000;
+  box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.7); }
+
+.counter-inner {
+  position: relative;
+  display: inline-block;
+  padding: 3px 5px 0 5px;
+  margin: 10px 0; }
+
+.time-group {
+  display: inline-block;
+  margin-right: 40px;
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.4); }
+  .time-group:last-of-type {
+    margin-right: 0; }
+
+.time-card {
+  display: inline-block;
+  width: 97.5px;
+  height: 141px;
+  color: #ffffff;
+  font-size: 120px;
+  line-height: 141px;
+  position: relative;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2); }
+  .time-card .top,
+  .time-card .bottom {
+    display: block;
+    width: 100%;
+    height: calc(50% - 1px);
+    left: 0;
+    position: absolute;
+    background-color: #313337; }
+    .time-card .top::before,
+    .time-card .bottom::before {
+      content: attr(data-count);
+      display: block; }
+    .time-card .top::after,
+    .time-card .bottom::after {
+      content: '';
+      display: block;
+      box-shadow: inset 0px -20px 2px 0px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; }
+  .time-card .top {
+    top: 0;
+    border-radius: 4px 4px 0px 0px; }
+  .time-card .bottom {
+    bottom: 0;
+    border-radius: 0px 0px 4px 4px;
+    line-height: 0; }
+    .time-card .bottom::after {
+      box-shadow: inset 0px 40px 15px 0px rgba(0, 0, 0, 0.3); }
+
+.inset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e2227;
+  box-shadow: inset 70px 55px 27px -30px rgba(0, 0, 0, 0.75); }
+  .inset::before, .inset::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #4d4d4d; }
+  .inset::before {
+    height: 1px;
+    top: 0;
+    background: linear-gradient(90deg, #1a1a1a 0%, #4d4d4d 20%, #4d4d4d 80%, #1a1a1a 100%); }
+  .inset::after {
+    bottom: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #4d4d4d 0%, #1a1a1a 12.5%, #4d4d4d 25%, #1a1a1a 37.5%, #4d4d4d 50%, #1a1a1a 62.5%, #4d4d4d 75%, #1a1a1a 87.5%, #4d4d4d 100%); }
+  .inset-left, .inset-right {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    z-index: 1;
+    background: linear-gradient(90deg, #1a1a1a 0%, #313337 30%, #313337 70%, #1a1a1a 100%); }
+  .inset-left {
+    left: 0;
+    width: 148px;
+    height: 1px;
+    transform-origin: 0 0;
+    transform: rotate(90deg); }
+  .inset-right {
+    right: 0;
+    width: 148px;
+    height: 1px;
+    transform-origin: 100% 0;
+    transform: rotate(-90deg); }
+
+</style></head>
+
+<body>
+    <main>
+        <img class="bg-img" src="https://telemundo-no-te-puedes-esconder.s3.amazonaws.com/background.png" />
+        <div class="clock">
+            <ul class="labels">
+                <li>DÍAS</li>
+                <li>HORAS</li>
+                <li>MINUTOS</li>
+                <li>SEGUNDOS</li>
+            </ul>
+            <div class="counter">
+                <div class="counter-inner">
+                    <div class="inset">
+                        <span class="inset-left"></span>
+                        <span class="inset-right"></span>
+                    </div>
+                    <div id="days" class="time-group">
+                        <li class="time-card">
+                            <div class="top" data-count="0"></div>
+                            <div class="bottom" data-count="0"></div>
+                        </li>
+                        <li class="time-card">
+                            <div class="top" data-count="0"></div>
+                            <div class="bottom" data-count="0"></div>
+                        </li>
+                    </div>
+                    <div id="hours" class="time-group">
+                        <li class="time-card">
+                            <div class="top" data-count="0"></div>
+                            <div class="bottom" data-count="0"></div>
+                        </li>
+                        <li class="time-card">
+                            <div class="top" data-count="0"></div>
+                            <div class="bottom" data-count="0"></div>
+                        </li>
+                    </div>
+                    <div id="minutes" class="time-group">
+                        <li class="time-card">
+                            <div class="top" data-count="0"></div>
+                            <div class="bottom" data-count="0"></div>
+                        </li>
+                        <li class="time-card">
+                            <div class="top" data-count="0"></div>
+                            <div class="bottom" data-count="0"></div>
+                        </li>
+                    </div>
+                    <div id="seconds" class="time-group">
+                        <li class="time-card">
+                            <div class="top" data-count="0"></div>
+                            <div class="bottom" data-count="0"></div>
+                        </li>
+                        <li class="time-card">
+                            <div class="top" data-count="0"></div>
+                            <div class="bottom" data-count="0"></div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+<script type="text/javascript">!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){"use strict";n.r(e);var r;n(1);function o(t,e){var n=t.querySelectorAll("[data-count]");4===n.length?n.forEach(function(t,n){n<2?t.getAttribute("data-count")!==e[0]&&t.setAttribute("data-count",e[0]):t.getAttribute("data-count")!==e[1]&&t.setAttribute("data-count",e[1])}):console.log("missing a card")}r=document.getElementById("seconds"),setInterval(function(){var t=function(t){var e=Date.parse(t)-Date.parse(new Date),n=Math.floor(e/1e3%60).toString().split(""),r=Math.floor(e/1e3/60%60).toString().split(""),o=Math.floor(e/36e5%24).toString().split("");return{days:Math.floor(e/864e5).toString().split(""),hours:o,minutes:r,seconds:n}}("September 30 2019 22:00:00");2!==t.days.length&&t.days.unshift("0"),2!==t.hours.length&&t.hours.unshift("0"),2!==t.minutes.length&&t.minutes.unshift("0"),2!==t.seconds.length&&t.seconds.unshift("0"),console.log(t),o(days,t.days),o(hours,t.hours),o(minutes,t.minutes),o(r,t.seconds)},1e3)},function(t,e,n){}]);</script></body>
+
+</html>

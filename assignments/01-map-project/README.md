@@ -42,3 +42,7 @@ In class: Informal presentations to class / no slides just showing work.
 ## Rubric
 
 [`rubric.pdf`](./rubric.pdf)
+
+Answer the question:
+
+This is what the MTA map would look like if [x] and it shows what I am interested in because [x]

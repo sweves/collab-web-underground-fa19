@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url('https://telemundo-no-te-puedes-esconder.s3.amazonaws.com/Gotham-Light.otf')
+        format('opentype');
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gotham-Light', sans-serif;
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bg-video {
+    z-index: -4;
+}
+
+.clock {
+    position: absolute;
+    bottom: 430px;
+    width: 100%;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.labels {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    display: inline-block;
+    width: 100%;
+}
+
+.labels li {
+    display: inline-block;
+    color: #ffffff;
+    width: 24%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.counter {
+    background: #222528;
+    border: 5px solid #000000;
+    box-shadow: inset 0px 0px 30px 0px rgba(0, 0, 0, 0.7);
+}
+
+.counter-inner {
+    position: relative;
+    display: inline-block;
+    padding: 3px 5px 0 5px;
+    margin: 10px 0;
+}
+
+.time-group {
+    display: inline-block;
+    margin-right: 40px;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.4);
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
+.time-card {
+    display: inline-block;
+    width: 97.5px;
+    height: 141px;
+    color: #ffffff;
+    font-size: 120px;
+    line-height: 141px;
+    position: relative;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+
+    .top,
+    .bottom {
+        display: block;
+        width: 100%;
+        height: calc(50% - 1px);
+        left: 0;
+        position: absolute;
+        background-color: #313337;
+
+        &::before {
+            content: attr(data-count);
+            display: block;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            box-shadow: inset 0px -20px 2px 0px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+
+    .top {
+        top: 0;
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .bottom {
+        bottom: 0;
+        border-radius: 0px 0px 4px 4px;
+        line-height: 0;
+
+        &::after {
+            box-shadow: inset 0px 40px 15px 0px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.inset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e2227;
+    box-shadow: inset 70px 55px 27px -30px rgba(0, 0, 0, 0.75);
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #4d4d4d;
+    }
+    &::before {
+        height: 1px;
+        top: 0;
+        background: linear-gradient(
+            90deg,
+            #1a1a1a 0%,
+            #4d4d4d 20%,
+            #4d4d4d 80%,
+            #1a1a1a 100%
+        );
+    }
+
+    &::after {
+        bottom: 0;
+        height: 2px;
+        background: linear-gradient(
+            90deg,
+            #4d4d4d 0%,
+            #1a1a1a 12.5%,
+            #4d4d4d 25%,
+            #1a1a1a 37.5%,
+            #4d4d4d 50%,
+            #1a1a1a 62.5%,
+            #4d4d4d 75%,
+            #1a1a1a 87.5%,
+            #4d4d4d 100%
+        );
+    }
+    &-left,
+    &-right {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 1px;
+        z-index: 1;
+        background: linear-gradient(
+            90deg,
+            #1a1a1a 0%,
+            #313337 30%,
+            #313337 70%,
+            #1a1a1a 100%
+        );
+    }
+
+    &-left {
+        left: 0;
+        width: 148px;
+        height: 1px;
+        transform-origin: 0 0;
+        transform: rotate(90deg);
+    }
+
+    &-right {
+        right: 0;
+        width: 148px;
+        height: 1px;
+        transform-origin: 100% 0;
+        transform: rotate(-90deg);
+    }
+}
