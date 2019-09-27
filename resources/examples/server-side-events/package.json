@@ -1,0 +1,15 @@
+{
+  "name": "server-side-events",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "sarah <sarahewever@gmail.com> (httpa://sweves.github.io)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "johnny-five": "^1.3.1"
+  }
+}
