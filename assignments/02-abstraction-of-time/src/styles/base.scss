@@ -1,0 +1,10 @@
+@import './variables/loader.scss';
+@import './vendor/loader.scss';
+
+body {
+  background: $black;
+}
+
+h1 {
+  color: $white;
+}
